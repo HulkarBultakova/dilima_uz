@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(250, 248, 245);
+}
+.head , .bg-nav{
+    background-color: rgb(236, 235, 235);
+}
+.language{
+    background-color: #fff;
+    border: none;
+    outline: none;
+    padding: 0px 10px;
+    border-radius: 3px;
+}
+nav li a{
+    color: black;
+    
+}
+
+nav li :hover , .active{
+    color: #fff;
+    background-color: #333;
+}
+.active a{
+    color: #fff;
+}
+footer i a, .col-md-3 a{
+    font-size: 12px;
+}
+.star::after{
+    content: '_____';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.star::before{
+    content: '_____';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.responsive{
+    display: none;
+}
+.res-card{
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+ 
+
+p{
+    font-size: 10px;
+}
+h5{
+    font-size: 16px;
+}
+  
+   header{
+       display: none;
+   }
+   .responsive{
+       background-color: rgb(192, 188, 188);
+       display: block;
+       
+   }
+   .responsive .dropdown-menu a:hover {
+      color: #fff;
+      background-color: blue;
+   }
+   nav{
+       z-index: 1;
+   }
+  #ban {
+      display: none;
+  }
+  #cards{
+      display: none;
+  }
+  .res-card{
+      display: block;
+  }
+  .box{
+      width: 100;
+  }
+ .img{
+     width: 100%;
+     object-fit: cover;
+ }
+  
+}
+@media screen and (min-width: 601px) and (max-width: 992px){
+
+p{
+    font-size: 12px;
+}
+h5{
+    font-size: 16px;
+}
+.img{
+    width: 100%;
+}
+#ban{
+    display: none;
+}
+}
